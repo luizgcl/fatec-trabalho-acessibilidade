@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade</title>
+  <meta name="description" content="Site para o Trabalho de Acessibilidade">
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header>
+    <div id="ac_menu">
+      <a accesskey="0" href="#">[0] Esconder/Mostrar Menu</a>
+      <a href="#start">[1] Início</a>
+      <a href="#about">[2] Sobre</a>
+      <a href="#contact">[3] Contato</a>
+      <button 
+        type="button" 
+        role="menuitem" 
+        id="aumentar-fonte" 
+        aria-describedby="Botão para aumentar o tamanho da fonte">
+        +A
+      </button>
+      <button 
+        type="button" 
+        role="menuitem" 
+        id="reduzir-fonte"
+        aria-describedby="Botão para diminuir o tamanho da fonte">
+        -A
+      </button>
+      <button 
+        type="button" 
+        role="menuitem" 
+        id="reset-zoom"
+        aria-describedby="Botão para redefinir o tamanho da fonte">
+        100%
+      </button>
+      <button 
+        type="button" 
+        role="menuitem" 
+        id="high-contrast"
+        aria-describedby="Botão para definir auto contraste">
+        Alto Contraste
+      </button>
+      <button 
+        type="button" 
+        role="menuitem" 
+        id="original-color"
+        aria-describedby="Botão para redefinir as cores do site">
+        Cor Original
+      </button>
+    </div>
+    <nav class="menu">
+      <ul class="menu">
+        <li>
+          <a accesskey="1" href="#start">Início</a>
+        </li>
+        <li>
+          <a accesskey="2" href="#about">Sobre</a>
+        </li>
+        <li>
+          <a accesskey="3" href="#contact">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- <div id="ac_menu" role="menu" style="display: block;">
+    <button id="">Enable Access Menu</button>
+  </div> -->
+  <main class="main-container">
+    <div class="container">
+      <section id="start">
+        <h1>Início</h1>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+      </section>
+      <section id="about">
+        <h1>Sobre</h1>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+      </section>
+      <section id="contact">
+        <h1>Contato</h1>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+        <p style="font-size: 16px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore deleniti quasi quas voluptates aliquid aperiam voluptate, facilis soluta esse delectus quibusdam veritatis nemo saepe laboriosam dolor minima vitae est provident cupiditate animi vero repellendus. Esse quidem cumque voluptas est quam numquam, deserunt repellat voluptatem ut quisquam aliquid voluptatum omnis adipisci quos, laboriosam magnam commodi, odio consequuntur quaerat soluta illum ullam. Qui optio totam provident dolorem minima!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde vel beatae, hic obcaecati quo corporis possimus provident aliquid perferendis est expedita dolores, ab voluptatibus sint ut doloribus dolorem ipsa nobis quod voluptates odit, repellendus dicta accusamus? Facilis, ex similique, voluptatem, exercitationem corrupti quasi velit minus officia eos harum natus rerum magnam suscipit recusandae atque cupiditate? Ut tempore, nisi ullam impedit non, ipsa earum at quo, quod illum ratione dolores corrupti! Animi sed, assumenda veritatis ullam, est ratione officiis eveniet, dicta reprehenderit eius quaerat? Magni, maiores illo odit quia architecto in ipsum. Porro impedit ullam vitae. Similique, eligendi eveniet corrupti obcaecati libero quasi? Aliquid, eos ipsam? Harum nulla culpa ea molestiae pariatur deserunt sed, rem voluptatibus nemo eius, ex et quibusdam quos consequatur? Fugiat soluta dolorem doloremque alias earum sed omnis nulla sequi, consequatur temporibus!
+        </p>
+      </section>
+    </div>
+  </main>
+  <script src="js/index.js"></script>
+</body>
+</html>
