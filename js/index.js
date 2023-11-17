@@ -19,7 +19,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.getElementById("aumentar-fonte").addEventListener("click", () => {
-  document.querySelectorAll("p").forEach((element) => {
+  document.querySelectorAll("p, h1").forEach((element) => {
     if (element.style.fontSize.includes("px")) {
       element.style.fontSize = `${parseInt(element.style.fontSize) / 16}rem`;
     }
@@ -30,7 +30,7 @@ document.getElementById("aumentar-fonte").addEventListener("click", () => {
 });
 
 document.getElementById("reduzir-fonte").addEventListener("click", () => {
-  document.querySelectorAll("p").forEach((element) => {
+  document.querySelectorAll("p, h1").forEach((element) => {
     if (element.style.fontSize.includes("px")) {
       element.style.fontSize = `${parseInt(element.style.fontSize) / 16}rem`;
     }
@@ -43,6 +43,9 @@ document.getElementById("reduzir-fonte").addEventListener("click", () => {
 document.getElementById("reset-zoom").addEventListener("click", () => {
   document.querySelectorAll("p").forEach((element) => {
     element.style.fontSize = `1rem`;
+  });
+  document.querySelectorAll("h1").forEach((element) => {
+    element.style.fontSize = `1.5rem`;
   });
 });
 
